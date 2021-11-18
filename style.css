@@ -42,18 +42,42 @@ body {
 }
 .banner{
     height: 300px;  
-    width:100%;
+    /* margin-left: -555px; */
+    /* this is the most scuffed thing on earth please fix this */
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .hide{
-    opacity:0%;
+    opacity: 0%;
+    animation-name:bannerfade;
+    animation-duration: 1s;
+}
+@keyframes bannerfade {
+    0%{
+        opacity:100%
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+.reappear{
+    opacity: 100%;
+    animation-name:bannerappear;
+    animation-duration: 1s;
+}
+@keyframes bannerappear {
+    0%{
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
 }
 #banner1{
     position:absolute;
-    background-color:green;
     z-index: 2;
-    animation-duration: 6s;
-    animation-name: banner1fade;
-    animation-iteration-count: infinite;
 }
 /* @keyframes banner1fade {
     0% {
@@ -68,11 +92,7 @@ body {
   } */
 #banner2{
     position:absolute;
-    background-color:yellow;
     z-index: 3;
-    animation-duration: 6s;
-    animation-name: banner2fade;
-    animation-iteration-count: infinite;
 }
 /* @keyframes banner2fade {
     0% {
@@ -87,11 +107,7 @@ body {
   } */
 #banner3{
     position:absolute;
-    background-color:red;
     z-index: 4;
-    animation-duration: 6s;
-    animation-name: banner3fade;
-    animation-iteration-count: infinite;
 }
 /* @keyframes banner3fade {
     0% {
