@@ -3,6 +3,7 @@ html
     background-color: #f7f6d5;
     font-family: 'Noto Sans JP', sans-serif;
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
 }
 body {
     position:relative;
@@ -123,3 +124,8 @@ body {
         opacity: 0%;
     }
   } */
+
+  #first-para
+  {
+      margin-top: 35%;
+  }
