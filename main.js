@@ -1,9 +1,60 @@
 'use strict';
 
-var interval = 2000;
+var interval = 6000;
+var intervalID;
 var i = 0;
 var banners = document.querySelectorAll(".banner div");
-function hell(){
+const element1 = document.querySelector('.button');
+var elements = document.getElementsByClassName("banner-button");
+
+//make circle plus arrows
+//on event listener, add class to hell function
+//reset interval?
+//don't forget to create new pages
+//and change the color of the buttons
+
+var bannerForwards = function() {
+    if(i > 2){
+        i = 0;
+    } else if(i < 0){
+        i = 2;
+    } 
+
+    clearInterval(intervalID);
+    intervalID = setInterval(bannerMovement, interval);
+    hell(true);
+};
+elements[1].addEventListener('click', bannerForwards, false);
+
+var bannerBack = function() {
+    if(i < 0){
+        i = 2;
+    } else if(i > 2){
+        i = 0;
+    }
+    clearInterval(intervalID);
+    intervalID = setInterval(bannerMovement, interval);
+    console.log(i);
+    hell(false);
+};
+elements[0].addEventListener('click', bannerBack, false);
+
+    
+
+
+function hell(dir){
+    console.log("prev " + i)
+    if(dir != false){
+        i++;
+    } else{
+        i--;
+    }
+
+    if(i < 0){
+        i = 2;
+    } else if(i > 2){
+        i = 0;
+    }
     switch (i){
         case 0:
             document.querySelectorAll(".banner")[1].classList.add("hide");
@@ -11,39 +62,51 @@ function hell(){
             document.querySelectorAll(".banner")[1].classList.remove("reappear");
             document.querySelectorAll(".banner")[2].classList.remove("reappear");
 
-            document.querySelectorAll(".banner")[1].classList.add("hide");
-            document.querySelectorAll(".banner")[2].classList.add("hide");
+            document.querySelectorAll(".circle")[0].classList.add("circle-highlighted");
+            document.querySelectorAll(".circle")[2].classList.remove("circle-highlighted");
+            document.querySelectorAll(".circle")[1].classList.remove("circle-highlighted");
             break;
         case 1:
             document.querySelectorAll(".banner")[2].classList.add("hide");
             document.querySelectorAll(".banner")[1].classList.remove("hide");
 
             document.querySelectorAll(".banner")[1].classList.add("reappear");
+            document.querySelectorAll(".banner")[2].classList.remove("reappear");
+
+            document.querySelectorAll(".circle")[0].classList.remove("circle-highlighted");
+            document.querySelectorAll(".circle")[1].classList.add("circle-highlighted");
+            document.querySelectorAll(".circle")[2].classList.remove("circle-highlighted");
             break;
         case 2:
             document.querySelectorAll(".banner")[2].classList.remove("hide");
             document.querySelectorAll(".banner")[2].classList.add("reappear");
+
+            document.querySelectorAll(".circle")[0].classList.remove("circle-highlighted");
+            document.querySelectorAll(".circle")[1].classList.remove("circle-highlighted");
+            document.querySelectorAll(".circle")[2].classList.add("circle-highlighted");
             break;
+        // case 0:
+        //     console.log("0");
+        //     break;
+        // case 1:
+        //     console.log("1");
+        //     break;
+        // case 2:
+        //     console.log("2");
+        //     break;
+
     }
+
+    console.log("new " + i)
 }
+
+
 function bannerMovement(){
-        setInterval(() => {
             if(i > 2){
                 i = 0;
-            }
-
-            hell();
-            // for(var j = 0; j < 3; j++){
-            //     //i = currently displayed
-            //     //attach hide to all that isn't i
-            //     if(j == i){
-            //         document.querySelectorAll(".banner")[j].classList.remove("hide");
-            //     } else {
-            //         document.querySelectorAll(".banner")[j].classList.add("hide");
-            //     }
-            // }
-            i++;
-    }, interval);
+            } 
+            hell(true);
+            // console.log(i);
 }
 //case 1: 1, _, 3
 //^ 3 must be blank
@@ -52,4 +115,8 @@ function bannerMovement(){
 //case 0: _, 2, 3
 //2 and 3 are blank
 
-bannerMovement();
+function init(){
+    intervalID = setInterval(bannerMovement, interval);
+}
+
+init();
