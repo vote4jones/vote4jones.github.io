@@ -43,8 +43,6 @@ body {
 }
 .banner{
     height: 300px;  
-    /* margin-left: -555px; */
-    /* this is the most scuffed thing on earth please fix this */
     width: 100%;
     display: block;
     margin-left: auto;
@@ -80,51 +78,57 @@ body {
     position:absolute;
     z-index: 2;
 }
-/* @keyframes banner1fade {
-    0% {
-        opacity:0%
-    }
-    50%{
-        opacity:0%
-    }
-    100% {
-        opacity: 100%;
-    }
-  } */
 #banner2{
     position:absolute;
     z-index: 3;
 }
-/* @keyframes banner2fade {
-    0% {
-        opacity:0%
-    }
-    50%{
-        opacity:100%
-    }
-    100% {
-        opacity: 0%;
-    }
-  } */
 #banner3{
     position:absolute;
     z-index: 4;
 }
-/* @keyframes banner3fade {
-    0% {
-        opacity:0%
-    }
-    20%{
-        opacity:100%
-    }
-    50%{
-        opacity:0%
-    }
-    100% {
-        opacity: 0%;
-    }
-  } */
 
+/* circles */
+#circle-container{
+    position: relative;
+    display:flex;
+    flex-flow: row nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: flex-end ;
+    width:auto;
+    top:85%;
+}
+.circle{
+    background-color:white;
+    z-index: 20;
+    margin:1%;
+    height:10px;
+    width:10px;
+    border-radius: 50%;
+}
+.circle-highlighted{
+    background-color: orange;
+}
+
+/* buttons */
+#button-container{
+    position: relative;
+    display:flex;
+    flex-flow: row nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-end ;
+    width:auto;
+    top:25%;
+}
+.banner-button{
+    z-index: 20;
+    margin:1%;
+    height:3em;
+    width:3em;
+}
+
+/* body */
   #first-para
   {
       margin-top: 25%;

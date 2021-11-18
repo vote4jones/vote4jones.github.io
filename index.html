@@ -10,6 +10,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="main.js" async></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
     <title>Jones 2021 Website</title>
 </head>
     <body>
@@ -28,8 +32,21 @@
         <h1>You should vote for Jones since I asked nicely :)</h1>
         <div id="banner-area">
             <img src = "appy3.jpeg" class="banner" id="banner1"> </img>
-            <img src = "happy2.jpeg" class="banner" id="banner2"> </img>
-            <img src = "happy1.jpeg" class="banner"id="banner3"> </img>
+            <img src = "happy2.jpeg" class="banner hide" id="banner2"> </img>
+            <img src = "happy1.jpeg" class="banner hide"id="banner3"> </img>
+
+            <div id="circle-container">
+                <div class="circle circle-highlighted">
+                </div>
+                <div class="circle">
+                </div>
+                <div class="circle">
+                </div>
+            </div>
+            <div id="button-container">
+                <ion-icon name="arrow-back-circle" class="banner-button"></ion-icon>
+                <ion-icon name="arrow-forward-circle" class="banner-button"></ion-icon>
+            </div>
         </div>
         <div id="first-para" class="body-para">
             <h2><strong>Paragraph 1 About Jones</strong></h2>
