@@ -131,5 +131,26 @@ body {
 /* body */
   #first-para
   {
-      margin-top: 35%;
+      margin-top: 25%;
   }
+
+  .body-para
+  {
+      padding: 10%;
+  }
+
+  #photos
+  {
+      display: grid;
+      grid-template-areas:
+      "photo1" "description1"
+      "description2" "photo2";
+      gap: 25px 25px;
+  }
+
+/* Items in the grid */
+
+  photo1 {grid-area: photo1;}
+  desc1 {grid-area:description1;}
+  photo2 {grid-area:photo2;}
+  desc2 {grid-area:description2;}
