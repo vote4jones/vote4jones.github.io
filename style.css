@@ -1,6 +1,6 @@
 html
 {
-    background-color: #f1fffaff;
+    background-color: #f1fffa;
     font-family: 'Noto Sans JP', sans-serif;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
@@ -8,6 +8,9 @@ html
 body {
     position:relative;
     margin: 0px;
+}
+#top-body{
+    margin-bottom:600px;
 }
 h1{
     margin-top: 3%;
@@ -18,7 +21,7 @@ h1{
 .top-header{
     width:100%;
     height:7.5em;
-    background-color: blanchedalmond;
+    background-color: #F1FFFA;
 }
 .home-img{
     margin: 0.5%;
@@ -34,20 +37,27 @@ h1{
     flex-direction: row;
     justify-content: flex-end;
     width:auto;
-    height:3em;
-    background-color:burlywood;
+    height:3.5em;
+    background-color:#61dac5;
     /* border-style: solid;
     border-bottom: #2a801f; */
 }
+#top-bar-title{
+    font-size:90px;
+    text-align: center;
+    margin-right:8%;
+    margin-bottom: 1%;
+}
 .page-link{
     padding: 0.5em;
+    padding-top: 1em;
     padding-right: 1em;
     padding-left: 1em;
     transition-property: background-color;
     transition-duration: 0.1s;
     transition-delay: 0.05s;
     text-decoration: none;
-    height:2em;
+    height:3em;
 }
 #last-bar-child{
     margin-right:10%;
@@ -57,7 +67,8 @@ a:hover, a:visited, a:link, a:active{
     color:black;
 }
 .page-link:hover{
-    background-color: rgb(48, 116, 175);
+    background-color: #80ffd2;
+     /* #F05D5E; */
     text-decoration: none;
 }
 
@@ -65,13 +76,12 @@ a:hover, a:visited, a:link, a:active{
 #banner-area{
     position:absolute;
     background: black;
-    margin-right: 10%;
-    margin-left: 10%;
-    height:300px;
-    width:80%;
+
+    height:600px;
+    width:100%;
 }
 .banner{
-    height: 300px;  
+    height: 600px;  
     width: 100%;
     display: block;
     margin-left: auto;
@@ -125,7 +135,7 @@ a:hover, a:visited, a:link, a:active{
     justify-content: center;
     align-content: flex-end ;
     width:auto;
-    top:85%;
+    top:90%;
 }
 .circle{
     background-color:white;
@@ -136,7 +146,7 @@ a:hover, a:visited, a:link, a:active{
     border-radius: 50%;
 }
 .circle-highlighted{
-    background-color: orange;
+    background-color: rgb(255, 166, 0);
 }
 
 /* buttons */
@@ -148,7 +158,7 @@ a:hover, a:visited, a:link, a:active{
     justify-content: space-between;
     align-content: flex-end ;
     width:auto;
-    top:25%;
+    top:40%;
     cursor:pointer;
 }
 .banner-button{
@@ -161,12 +171,12 @@ a:hover, a:visited, a:link, a:active{
 /* body */
   #first-para
   {
-      margin-top: 25%;
+      margin-top: 10%;
   }
 
   .body-para
   {
-      padding: 10%;
+      padding: 2%;
   }
 
   #photos
@@ -176,6 +186,11 @@ a:hover, a:visited, a:link, a:active{
       "photo1" "description1"
       "description2" "photo2";
       gap: 25px 25px;
+  }
+
+  #bottom-bar{
+      padding:10%;
+      margin-bottom:10%;
   }
 
 /* Items in the grid */
