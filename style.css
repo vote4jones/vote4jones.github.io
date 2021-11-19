@@ -149,6 +149,7 @@ a:hover, a:visited, a:link, a:active{
     align-content: flex-end ;
     width:auto;
     top:25%;
+    cursor:pointer;
 }
 .banner-button{
     z-index: 20;
