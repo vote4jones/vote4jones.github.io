@@ -36,7 +36,7 @@ h1{
     flex-flow: row nowrap;
     flex-direction: row;
     justify-content: flex-end;
-    width:auto;
+    width:100%;
     height:3.5em;
     background-color:#61dac5;
     /* border-style: solid;
@@ -179,23 +179,21 @@ a:hover, a:visited, a:link, a:active{
       padding: 2%;
   }
 
-  #photos
-  {
-      display: grid;
-      grid-template-areas:
-      "photo1" "description1"
-      "description2" "photo2";
-      gap: 25px 25px;
-  }
 
-  #bottom-bar{
-      padding:10%;
-      margin-bottom:10%;
-  }
 
-/* Items in the grid */
+#gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: flex-start;
+    align-content: space-around;
+    align-content: space-between;
+    gap: 5%;
+}
 
-  photo1 {grid-area: photo1;}
-  desc1 {grid-area:description1;}
-  photo2 {grid-area:photo2;}
-  desc2 {grid-area:description2;}
+.images
+{
+    width:25%;
+    height: auto;
+}
