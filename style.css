@@ -182,6 +182,7 @@ a:hover, a:visited, a:link, a:active{
 
 
 #gallery {
+    margin-top: 1in;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -194,6 +195,6 @@ a:hover, a:visited, a:link, a:active{
 
 .images
 {
-    width:25%;
+    width: 15%;
     height: auto;
 }
