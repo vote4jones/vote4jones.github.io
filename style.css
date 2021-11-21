@@ -35,14 +35,19 @@ h1{
     flex-flow: row nowrap;
     flex-direction: row;
     justify-content: flex-end;
-    width:auto;
+    width:100%;
     height:3.5em;
     background-color:#61dac5;
     /* border-style: solid;
     border-bottom: #2a801f; */
 }
 #top-bar-title{
+<<<<<<< HEAD
     font-size:80px;
+=======
+    font-size: 3.5vw;
+    text-align: center;
+>>>>>>> ac4e4cf3c1e8840bdc84fcc09e5a2c338481605c
     margin-right:8%;
     margin-left:5%;
     margin-top: 100%;
@@ -177,6 +182,7 @@ a:hover, a:visited, a:link, a:active{
   {
       padding: 2%;
   }
+<<<<<<< HEAD
   #photos
   {
       display: grid;
@@ -185,12 +191,12 @@ a:hover, a:visited, a:link, a:active{
       "description2" "photo2";
       gap: 25px 25px;
   }
+=======
 
-  #bottom-bar{
-      padding:10%;
-      margin-bottom:10%;
-  }
+>>>>>>> ac4e4cf3c1e8840bdc84fcc09e5a2c338481605c
 
+
+<<<<<<< HEAD
   .policy-collapsible {
     background-color: #eee;
     color: #444;
@@ -213,8 +219,22 @@ a:hover, a:visited, a:link, a:active{
   }
 
 /* Items in the grid */
+=======
+#gallery {
+    margin-top: 1in;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: flex-start;
+    align-content: space-around;
+    align-content: space-between;
+    gap: 5%;
+}
+>>>>>>> ac4e4cf3c1e8840bdc84fcc09e5a2c338481605c
 
-  photo1 {grid-area: photo1;}
-  desc1 {grid-area:description1;}
-  photo2 {grid-area:photo2;}
-  desc2 {grid-area:description2;}
+.images
+{
+    width: 15%;
+    height: auto;
+}
