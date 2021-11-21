@@ -42,12 +42,8 @@ h1{
     border-bottom: #2a801f; */
 }
 #top-bar-title{
-<<<<<<< HEAD
-    font-size:80px;
-=======
-    font-size: 3.5vw;
+    font-size: 80px;
     text-align: center;
->>>>>>> ac4e4cf3c1e8840bdc84fcc09e5a2c338481605c
     margin-right:8%;
     margin-left:5%;
     margin-top: 100%;
@@ -182,7 +178,6 @@ a:hover, a:visited, a:link, a:active{
   {
       padding: 2%;
   }
-<<<<<<< HEAD
   #photos
   {
       display: grid;
@@ -191,12 +186,8 @@ a:hover, a:visited, a:link, a:active{
       "description2" "photo2";
       gap: 25px 25px;
   }
-=======
-
->>>>>>> ac4e4cf3c1e8840bdc84fcc09e5a2c338481605c
 
 
-<<<<<<< HEAD
   .policy-collapsible {
     background-color: #eee;
     color: #444;
@@ -219,7 +210,6 @@ a:hover, a:visited, a:link, a:active{
   }
 
 /* Items in the grid */
-=======
 #gallery {
     margin-top: 1in;
     display: flex;
@@ -231,7 +221,6 @@ a:hover, a:visited, a:link, a:active{
     align-content: space-between;
     gap: 5%;
 }
->>>>>>> ac4e4cf3c1e8840bdc84fcc09e5a2c338481605c
 
 .images
 {
