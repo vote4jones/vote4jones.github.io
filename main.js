@@ -13,7 +13,8 @@ var elements = document.getElementsByClassName("banner-button");
 //don't forget to create new pages
 //and change the color of the buttons
 
-var bannerForwards = function() {
+//====banner=====
+  var bannerForwards = function() {
     if(i > 2){
         i = 0;
     } else if(i < 0){
@@ -37,23 +38,6 @@ var bannerBack = function() {
     hell(false);
 };
 elements[0].addEventListener('click', bannerBack, false);
-
-var coll = document.getElementsByClassName("collapsible");
-for (let i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-    console.log("a");
-  });
-}
-
-    
-
 
 function hell(dir){
     console.log("prev " + i)
