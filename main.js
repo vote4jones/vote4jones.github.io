@@ -19,7 +19,6 @@ var bannerForwards = function() {
     } else if(i < 0){
         i = 2;
     } 
-
     clearInterval(intervalID);
     intervalID = setInterval(bannerMovement, interval);
     hell(true);
@@ -38,6 +37,20 @@ var bannerBack = function() {
     hell(false);
 };
 elements[0].addEventListener('click', bannerBack, false);
+
+var coll = document.getElementsByClassName("collapsible");
+for (let i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+    console.log("a");
+  });
+}
 
     
 
@@ -85,21 +98,10 @@ function hell(dir){
             document.querySelectorAll(".circle")[1].classList.remove("circle-highlighted");
             document.querySelectorAll(".circle")[2].classList.add("circle-highlighted");
             break;
-        // case 0:
-        //     console.log("0");
-        //     break;
-        // case 1:
-        //     console.log("1");
-        //     break;
-        // case 2:
-        //     console.log("2");
-        //     break;
-
     }
 
     console.log("new " + i)
 }
-
 
 function bannerMovement(){
             if(i > 2){

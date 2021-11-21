@@ -2,7 +2,6 @@ html
 {
     background-color: #f1fffa;
     font-family: 'Noto Sans JP', sans-serif;
-    text-align: center;
     font-family: 'Open Sans', sans-serif;
 }
 body {
@@ -43,13 +42,14 @@ h1{
     border-bottom: #2a801f; */
 }
 #top-bar-title{
-    font-size:90px;
-    text-align: center;
+    font-size:80px;
     margin-right:8%;
-    margin-bottom: 1%;
+    margin-left:5%;
+    margin-top: 100%;
+    font-weight:bold;
+    font-family: century-gothic, sans-serif;
 }
 .page-link{
-    padding: 0.5em;
     padding-top: 1em;
     padding-right: 1em;
     padding-left: 1em;
@@ -57,7 +57,7 @@ h1{
     transition-duration: 0.1s;
     transition-delay: 0.05s;
     text-decoration: none;
-    height:3em;
+    height:2.5em;
 }
 #last-bar-child{
     margin-right:10%;
@@ -173,12 +173,10 @@ a:hover, a:visited, a:link, a:active{
   {
       margin-top: 10%;
   }
-
   .body-para
   {
       padding: 2%;
   }
-
   #photos
   {
       display: grid;
@@ -191,6 +189,27 @@ a:hover, a:visited, a:link, a:active{
   #bottom-bar{
       padding:10%;
       margin-bottom:10%;
+  }
+
+  .policy-collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  .active, .policy-collapsible:hover {
+    background-color: #ccc;
+  }
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
   }
 
 /* Items in the grid */
