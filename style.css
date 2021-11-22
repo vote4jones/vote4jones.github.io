@@ -196,8 +196,8 @@ a:hover, a:visited, a:link, a:active{
 
   /* policy collapsible */
   .policy-collapsible {
-    background-color: #eee;
-    color: #444;
+    background-color: rgb(201, 201, 201);
+    color: rgb(48, 46, 46);
     cursor: pointer;
     width: 80%;
     padding: 18px;
@@ -205,19 +205,34 @@ a:hover, a:visited, a:link, a:active{
     margin-left: 10%;
     margin-right: 10%;
     outline: none;
-    font-size: 24px;
+    font-size: 2em;
+    font-weight: 500;
+    font-family: 'montserrat', sans-serif;
   }
   .active, .policy-collapsible:hover {
-    background-color: #ccc;
+    background-color: rgb(221, 221, 221);
   }
   .content {
     display: none;
     overflow: hidden;
     margin-right: 10%;
     margin-left: 10%;
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
     background-color: #f1f1f1;
+    font-weight: 300;
+    font-size: 1.3em;
+    line-height: 175%;
+    animation: open 200ms ease-in-out forwards;
+    transform-origin: top center;
+  }
+  @keyframes open{
+    0% {
+        transform: scaleY(0)
+      }
+      100% {
+        transform: scaleY(1)
+      }
   }
 
 /* Items in the grid */
