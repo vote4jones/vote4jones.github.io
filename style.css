@@ -1,8 +1,8 @@
 html
 {
     background-color: #f1fffa;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'montserrat', sans-serif;
+    
 }
 body {
     position:relative;
@@ -41,13 +41,12 @@ h1{
     border-bottom: #2a801f; */
 }
 #top-bar-title{
-    font-size: 80px;
+    font-size: 5.42vw;
     text-align: center;
     margin-right:8%;
-    margin-left:5%;
-    margin-top: 1000px;
-    font-weight:bold;
-    font-family: century-gothic, sans-serif;
+    margin-left:1.5vw;
+    font-weight: 700;
+    font-family: 'montserrat', sans-serif;
 }
 .page-link{
     padding-top: 1em;
@@ -172,6 +171,15 @@ a:hover, a:visited, a:link, a:active{
   #first-para
   {
       margin-top: 10%;
+      margin-right: 20%;
+      margin-left: 20%;
+  }
+  .intro-p{
+      font-size:1.5em
+  }
+  .top-p-center{
+      text-align:center;
+      font-size:2em;
   }
   .body-para
   {
