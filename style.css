@@ -2,7 +2,6 @@ html
 {
     background-color: #f1fffa;
     font-family: 'Noto Sans JP', sans-serif;
-    text-align: center;
     font-family: 'Open Sans', sans-serif;
 }
 body {
@@ -20,7 +19,6 @@ h1{
 /* top bar */
 .top-header{
     width:100%;
-    height:7.5em;
     background-color: #F1FFFA;
 }
 .home-img{
@@ -43,13 +41,15 @@ h1{
     border-bottom: #2a801f; */
 }
 #top-bar-title{
-    font-size: 3.5vw;
+    font-size: 80px;
     text-align: center;
     margin-right:8%;
-    margin-bottom: 1%;
+    margin-left:5%;
+    margin-top: 1000px;
+    font-weight:bold;
+    font-family: century-gothic, sans-serif;
 }
 .page-link{
-    padding: 0.5em;
     padding-top: 1em;
     padding-right: 1em;
     padding-left: 1em;
@@ -57,7 +57,7 @@ h1{
     transition-duration: 0.1s;
     transition-delay: 0.05s;
     text-decoration: none;
-    height:3em;
+    height:2.5em;
 }
 #last-bar-child{
     margin-right:10%;
@@ -173,14 +173,46 @@ a:hover, a:visited, a:link, a:active{
   {
       margin-top: 10%;
   }
-
   .body-para
   {
       padding: 2%;
   }
+  #photos
+  {
+      display: grid;
+      grid-template-areas:
+      "photo1" "description1"
+      "description2" "photo2";
+      gap: 25px 25px;
+  }
 
+  /* policy collapsible */
+  .policy-collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    width: 80%;
+    padding: 18px;
+    border: none;
+    margin-left: 10%;
+    margin-right: 10%;
+    outline: none;
+    font-size: 24px;
+  }
+  .active, .policy-collapsible:hover {
+    background-color: #ccc;
+  }
+  .content {
+    display: none;
+    overflow: hidden;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding-left: 18px;
+    padding-right: 18px;
+    background-color: #f1f1f1;
+  }
 
-
+/* Items in the grid */
 #gallery {
     margin-top: 1in;
     display: flex;
