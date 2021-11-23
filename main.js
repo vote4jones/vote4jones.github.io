@@ -34,13 +34,11 @@ var bannerBack = function() {
     }
     clearInterval(intervalID);
     intervalID = setInterval(bannerMovement, interval);
-    console.log(i);
     hell(false);
 };
 elements[0].addEventListener('click', bannerBack, false);
 
 function hell(dir){
-    console.log("prev " + i)
     if(dir != false){
         i++;
     } else{
@@ -83,8 +81,6 @@ function hell(dir){
             document.querySelectorAll(".circle")[2].classList.add("circle-highlighted");
             break;
     }
-
-    console.log("new " + i)
 }
 
 function bannerMovement(){
