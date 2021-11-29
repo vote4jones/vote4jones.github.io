@@ -137,7 +137,7 @@ a:hover, a:visited, a:link, a:active{
     top:90%;
 }
 .circle{
-    background-color:white;
+    background-color:rgb(233, 233, 233);
     z-index: 20;
     margin:1%;
     height:10px;
